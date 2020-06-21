@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Loop {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
         boolean isOnRepeat = true;
         while(isOnRepeat) {
             System.out.println("Playing current song");
@@ -14,5 +14,6 @@ public class Loop {
             }
         }
         System.out.println("Playing next song");
+    }
     }
 }

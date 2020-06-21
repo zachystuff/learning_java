@@ -14,12 +14,12 @@ public class MultipleChoice {
 
         Scanner input = new Scanner(System.in);
         String userAnswer = input.next();
-
+        
         if (correctAnswer.equals(userAnswer.toLowerCase())) {
             System.out.println("Congratulations");
         } else {
             System.out.println("nice try bub! the correct answer is " + correctAnswer );
         }
-
+        input.close();
     }
 }
